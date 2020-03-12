@@ -98,7 +98,7 @@
         
         // withdraw btn event handler
         
-        const withdrawBtn = document.getElementById("addwithdraw");
+        const withdrawBtn = document.getElementById("addWithdraw");
         withdrawBtn.addEventListener("click", function(){
             const withdrawNumber = getInputNumber("withdrawAmount");
            updateSpanText("currentWithdraw", withdrawNumber);
@@ -117,7 +117,7 @@
         function updateSpanText(id, depositNumber){
             const current = document.getElementById(id).innerText;
             const currentNumber = parseFloat(current);
-            const totalAmount = depositNumber + cuurentNumber;
+            const totalAmount = depositNumber + currentNumber;
             document.getElementById(id).innerText = totalAmount;
 
         }
